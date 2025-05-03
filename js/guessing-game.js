@@ -16,11 +16,18 @@ Implement the missing code based on the comments
 // Generate random number between 1-100 (inclusive)
 function generateWinningNumber() {
   // Return random integer
+  return Math.floor(Math.random() * 100) + 1
 }
 
 // Shuffle array using Fisher-Yates algorithm
 function shuffle(array) {
-  // Modify array in place and return it
+  for (let i = array.length - 1; i >= 1; i--) {
+    let randomInt = Math.ceil(Math.random() * i); 
+    let temp = array[i];
+    array[i] = array[randomInt];
+    array[randomInt] = temp; 
+  }
+  return array;
 }
 
 class Game {
