@@ -10,11 +10,62 @@
 
   <body>
 
+    <main>
+      <div class="window container w-75">
+        <div class="title-bar">
+          <div class="title-bar-text">Guessing Game</div>
+        </div>
+        <div class="window-body">
+          <div class="body-header-container">
+            <h1>Guess The Number</h1>
+            <h2>Between 1 and 100</h2>
+          </div>
+          <div class="form-group guess-container">
+            <form>
+              <input type="text" id="guessInput" inputmode="numeric" placeholder="#" pattern="[0-9]{1,3}">
+            </form>
+          </label></div>
+          <div id="guesses" class="container past-guesses-container">
+              <div class="col-2 offset-1">
+                <li class="before">?</li>
+              </div>
+              <div class="col-2">
+                <li class="before">?</li>
+              </div>
+              <div class="col-2">
+                <li class="before">?</li>
+              </div>
+              <div class="col-2">
+                <li class="before">?</li>
+              </div>
+              <div class="col-2">
+                <li class="before">?</li>
+              </div>
+          </div>
 
+          <!--Menu Buttons-->
+          <div id="menu-btns">
+            <div class="container btn-xp">
+              <button id = "Submit" class="button-custom">Submit</button>
+              <button id = "Reset" class="button-custom">Reset</button>
+              <button id = "Hint" class="button-custom">Hint</button>
+            </div>
+          </div>
 
+          <!-- Message Container -->
+          <div id="message-container" class="mt-3 text-center"></div>
 
+          <!--Footer-->
+          <div class="container footer">
+            <p class="footer-heading text center">
+              Copyright © 2025 FreeWifi0802
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <!-- <script src='js/guessing-game.js'></script> -->
+    <script src='js/guessing-game.js'></script>
     <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
   </body>
 
